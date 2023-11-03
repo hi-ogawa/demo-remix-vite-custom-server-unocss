@@ -2,13 +2,14 @@ import "virtual:uno.css";
 // import { cssBundleHref } from "@remix-run/css-bundle";
 // import type { LinksFunction } from "@remix-run/node";
 import {
-  Links,
+  // Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { CriticalCss } from "./critical-css";
 
 // export const links: LinksFunction = () => [
 //   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -22,6 +23,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         {/* <Links /> */}
+        <CriticalCss />
       </head>
       <body>
         <Outlet />
