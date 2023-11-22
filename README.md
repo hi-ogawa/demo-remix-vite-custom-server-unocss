@@ -1,3 +1,7 @@
+Example of using unocss for remix vite
+
+---
+
 # templates/unstable-vite-express
 
 ⚠️ Remix support for Vite is unstable and not recommended for production.
